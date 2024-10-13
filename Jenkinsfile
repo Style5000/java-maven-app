@@ -1,4 +1,4 @@
-def gv
+def gv //Global variable
 
 pipeline {
     agent any
@@ -6,7 +6,7 @@ pipeline {
         stage("init") {
             steps {
                 script {
-                    gv = load "script.groovy"
+                    gv = load "script.groovy" //Loading script.groovy file
                 }
             }
         }
